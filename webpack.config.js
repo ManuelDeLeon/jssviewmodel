@@ -1,7 +1,7 @@
 var isDevBuild = process.argv.indexOf('--env.prod') < 0;
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+//var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var nodeExternals = require('webpack-node-externals');
 var merge = require('webpack-merge');
 var allFilenamesExceptJavaScript = /\.(?!js(\?|$))([^.]+(\?|$))/;
@@ -28,13 +28,13 @@ var clientBundleConfig = merge(sharedConfig(), {
     entry: { 'main-client': './ClientApp/boot-client.js' },
     module: {
         loaders: [
-            { test: /\.css$/, loader: ExtractTextPlugin.extract(['css']) },
+            //{ test: /\.css$/, loader: ExtractTextPlugin.extract(['css']) },
             { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url', query: { limit: 25000 } }
         ]
     },
     output: { path: path.join(__dirname, clientBundleOutputDir) },
     plugins: [
-        new ExtractTextPlugin('site.css'),
+        //new ExtractTextPlugin('site.css'),
         new webpack.DllReferencePlugin({
             context: __dirname,
             manifest: require('./wwwroot/dist/vendor-manifest.json')
