@@ -1,3 +1,6 @@
+# Live demo:
+https://jssviewmodel.azurewebsites.net/
+
 # javascript-services-viewmodel
 
 A starter project that has/uses:
