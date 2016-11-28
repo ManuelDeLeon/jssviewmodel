@@ -46,6 +46,12 @@ NavMenu({
                 <span class='glyphicon glyphicon-education'></span> State on URL
               </Link>
             </li>
+            <li>
+              <a target="_blank" href="https://github.com/ManuelDeLeon/jssviewmodel">
+                <span class="glyphicon glyphicon-education" />
+                Source code
+              </a>
+            </li>
           </ul>
         </div>
       </div>
