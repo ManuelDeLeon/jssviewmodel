@@ -5,6 +5,9 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
+  <PropertyGroup>
+    <PublishOutputPathNoTrailingSlash Condition="'$(PublishOutputPathNoTrailingSlash)' == ''">C:\Temp\$(MSBuildProjectName)</PublishOutputPathNoTrailingSlash>
+  </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>19f56f79-deb2-4732-990f-ee553117966b</ProjectGuid>
