@@ -29,6 +29,7 @@
     "url-loader": "^0.5.7",
     "viewmodel-react": "^1.0.3",
     "viewmodel-react-plugin": "^2.0.1",
+    "watchpack": "^0.2.1",
     "webpack": "^1.13.3",
     "webpack-hot-middleware": "^2.13.2",
     "webpack-merge": "^0.19.0",
