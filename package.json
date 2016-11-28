@@ -5,7 +5,7 @@
   },
   "name": "jsservicesviewmodel",
   "version": "0.0.0",
-  "dependencies": {
+  "devDependencies": {
     "aspnet-prerendering": "^1.0.7",
     "aspnet-webpack": "^1.0.24",
     "aspnet-webpack-react": "^1.0.3",
