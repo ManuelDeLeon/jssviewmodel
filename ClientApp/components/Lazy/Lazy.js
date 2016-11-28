@@ -15,8 +15,8 @@ Lazy({
         </div>
       </div>
       <div class="col-md-8">
-        <img src="Lazy_1.png" b="if: !showArrows, mouseover: showArrows(true)" />
-        <img src="Lazy_2.png" b="if: showArrows, mouseout: showArrows(false)"/>
+        <img src="Lazy_1.png" b="class: { hide: showArrows }, mouseover: showArrows(true)" />
+        <img src="Lazy_2.png" b="class: { hide: !showArrows }, mouseout: showArrows(false)"/>
       </div>
     </div>
   }

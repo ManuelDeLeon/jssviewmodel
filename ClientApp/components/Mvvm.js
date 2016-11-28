@@ -28,8 +28,8 @@ Mvvm({
         </form>      
       </div>
       <div class="col-md-8">
-        <img src="Mvvm_1.png" b="if: !showArrows, mouseover: showArrows(true)" />
-        <img src="Mvvm_2.png" b="if: showArrows, mouseout: showArrows(false)"/>
+        <img src="Mvvm_1.png" b="class: { hide: showArrows }, mouseover: showArrows(true)" />
+        <img src="Mvvm_2.png" b="class: { hide: !showArrows }, mouseout: showArrows(false)"/>
       </div>
     </div>
   }
